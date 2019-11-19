@@ -1,0 +1,64 @@
+/* police spéciale */
+@font-face {
+	font-family: "gothic";
+	src: url("Elementary_Gothic.otf") format("opentype"),
+		 url("Elementary_Gothic.ttf") format("truetype");
+}
+@font-face{
+	font-family: "summertime";
+	src: url("SummertO.ttf") format("truetype");
+}
+
+/* titre de couleur différente, centré et avec police spéciale */
+h1
+{
+	font-family: "gothic", Impact, Georgia, Verdana, sans-serif;
+	font-weight: bold;
+	color : gray;
+	text-align: center;
+}
+.soustitre
+{
+	text-align: center;
+	color: gray;
+	font-size: 1em;
+	font-style: italic;
+}
+
+/* ajout image de fond */
+body
+{
+	background-image: url("fondchimie.png");
+	font-family: Arial, "Times New Roman", sans-serif;
+}
+
+h2
+{
+	font-family: "summertime", Impact, sans-serif;
+	font-size: 2em;
+	font-style: italic;
+	color: teal;
+}
+
+/* image avec bordure et ombre */
+.imageflottante
+{
+	float: left;
+	border: 6px navy double;
+	box-shadow: 3px 3px 5px blue;
+}
+.dessous
+{
+	clear: both;
+}
+
+a
+{
+	color: blue;
+}
+
+a:hover
+{
+	text-decoration: underline;
+	color: aqua;
+}
