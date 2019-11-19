@@ -1,62 +1,117 @@
-/* police spéciale */
-@font-face {
+/* polices spéciales */
+
+@font-face 
+{
 	font-family: "gothic";
 	src: url("Elementary_Gothic.otf") format("opentype"),
 		 url("Elementary_Gothic.ttf") format("truetype");
 }
-@font-face{
+
+@font-face
+{
 	font-family: "summertime";
 	src: url("SummertO.ttf") format("truetype");
 }
 
-/* titre de couleur différente, centré et avec police spéciale */
-h1
+/* En Tête */
+
+header
 {
-	font-family: "gothic", Impact, Georgia, Verdana, sans-serif;
-	font-weight: bold;
-	color : gray;
-	text-align: center;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: center;
+	align-items: center;
+	height: 10%;
+	max-width: 90%;
+	position: relative;
+	left: 10%;
 }
-.soustitre
+
+.image  /* image avec bordure et ombre */
 {
+	margin: auto;
+	border: 6px navy double;
+	box-shadow: 8px 4px 6px blue;
+	width: 60%;
+	height: 60%;
+}
+
+.titre
+{
+	margin: auto;
 	text-align: center;
 	color: gray;
 	font-size: 1em;
 	font-style: italic;
 }
 
-/* ajout image de fond */
+h1  /* titre de couleur différente, centré et avec police spéciale */
+{
+	font-family: "gothic", Impact, Georgia, Verdana, sans-serif;
+	font-weight: bold;
+	color : gray;
+	text-align: center;
+}
+
+/* Liseré */
+
+.lisere   
+{
+	position: absolute;
+	left: 1px;
+	top: 1px;
+	width: 10%;
+	height: 100%;
+	background: url("fondchimie.png") repeat-y center;
+	border-right: 1px teal solid;
+	border-radius: 6px/8px;
+
+}
+
+/* Corps de Texte */
+
 body
 {
-	background-image: url("fondchimie.png");
 	font-family: Arial, "Times New Roman", sans-serif;
 }
 
-h2
+
+#corps
+{
+	display: flex;
+	justify-content: flex-start;
+	align-items: stretch;
+	max-width: 90%;
+	position: relative;
+	left: 10%;
+}
+
+div
+{
+	margin: top;
+	width: auto;
+	min-width: 33%;
+}
+
+ul  /*ne pas afficher les puces*/
+{
+	list-style-type: none;
+}
+
+h2  /* mise en forme titre h2*/
 {
 	font-family: "summertime", Impact, sans-serif;
 	font-size: 2em;
 	font-style: italic;
 	color: teal;
+	text-align: center;
 }
 
-/* image avec bordure et ombre */
-.imageflottante
-{
-	float: left;
-	border: 6px navy double;
-	box-shadow: 3px 3px 5px blue;
-}
-.dessous
-{
-	clear: both;
-}
-
+/* style des liens */
 a
 {
 	color: blue;
 }
-
 a:hover
 {
 	text-decoration: underline;
