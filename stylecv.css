@@ -117,3 +117,20 @@ a:hover
 	text-decoration: underline;
 	color: aqua;
 }
+
+
+/* affichage sur des écrans plus petits que 1024px */
+
+@media screen and (max-width: 1024px)
+{
+	.lisere
+	{
+		display: none;	/* suppression du liseré */
+	}
+
+	#corps
+	{
+		display: flex;
+		flex-direction: column;
+	}
+}
